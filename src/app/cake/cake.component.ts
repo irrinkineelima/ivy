@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cake',
@@ -6,11 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cake.component.css']
 })
 export class CakeComponent implements OnInit {
-  cake:any={
-    name:"Mango Cake",
-    price:600,
-    image:"assets/mangocake4.jpg"
-  }
+
+  @Input() cake:any
+
   constructor() { }
 
   ngOnInit(): void {

@@ -7,6 +7,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CakeComponent } from './cake/cake.component';
 import { HomeComponent } from './home/home.component';
+import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
+import { AddcakeComponent } from './addcake/addcake.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +18,15 @@ import { HomeComponent } from './home/home.component';
     NavbarComponent,
     CarouselComponent,
     CakeComponent,
-    HomeComponent
+    HomeComponent,
+    SignupComponent,
+    LoginComponent,
+    AddcakeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
